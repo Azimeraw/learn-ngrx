@@ -1,0 +1,46 @@
+<h1>Learn ngrx</h1>
+<div class="ngContainer">
+  <button (click)="onfetchProduct()" class="fetch">Fetch Products</button>
+  <form [formGroup]="productForm" (ngSubmit)="onSubmit()" class="form">
+    <label for="id">ID:</label>
+    <input id="id" formControlName="id" />
+    <label for="name">Name:</label>
+    <input id="name" formControlName="name" />
+    <label for="color">Color:</label>
+    <input id="color" formControlName="color" />
+    <label for="price">Price:</label>
+    <input id="price" formControlName="price" />
+    <button type="submit">Add Product</button>
+  </form>
+</div>
+<table>
+  <tr *ngFor="let product of products$ | async">
+    <td>
+      Name:
+      <tr>
+        {{
+          product.name
+        }}
+      </tr>
+    </td>
+    <td>
+      Colur:
+      <tr>
+        {{
+          product.color
+        }}
+      </tr>
+    </td>
+    <td>
+      Price:
+      <tr>
+        {{
+          product.price
+        }}
+      </tr>
+    </td>
+    <td>
+      <button (click)="onDeleteProduct(product.id)">Delete</button>
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,79 @@
+h1 {
+  margin-left: 30%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  margin-left: 30%;
+}
+
+.form label {
+  margin-top: 10px;
+}
+
+.form input {
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #075324de;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.fetch {
+  margin-top: 50px;
+  margin-left: 335px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+table {
+  width: 60%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-left: 20%;
+}
+
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #e6e6fa;
+  flex-direction: column;
+}
+table tr {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #e6e6fa;
+  flex-direction: row;
+}
+
+table td button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 20%;
+}
+
+table tr:hover {
+  background-color: #f5f5f5;
+}
