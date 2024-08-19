@@ -2,7 +2,6 @@ import { createReducer, on } from '@ngrx/store';
 import {
   addProduct,
   deleteProduct,
-  loadProducts,
   loadProductsFailure,
   loadsProductsSuccess,
 } from './product.action';
